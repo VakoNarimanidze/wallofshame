@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import MainWallOfShame from "./Components/MainWallOfShame";
+
+const Users = [
+  {
+    id: 1,
+    name: 'Brad Simmons',
+    excuse: "Remember when you were young you shone like the sun. Shine on you",
+    count: 1
+  },
+  {
+    id: 2,
+    name: "Brad Simmons",
+    excuse: "Remember when you were young you shone like the sun. Shine on you",
+    count: 1
+  }
+]
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainWallOfShame users={Users} />
     </div>
   );
 }
